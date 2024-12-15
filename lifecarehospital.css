@@ -784,6 +784,7 @@ button:hover {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: transform 0.3s, box-shadow 0.3s;
+
 }
 
 
@@ -1008,17 +1009,21 @@ button:hover {
   padding: 10px;
 }
 
-/* Responsive Table */
-@media screen and (max-width: 768px) {
-  .order-summary table {
-      font-size: 14px;
-  }
 
-  .order-summary th, 
-  .order-summary td {
-      padding: 8px;
+@media (max-width: 768px) {
+  .medicine-card {
+    flex: 1 1 calc(50% - 16px); 
+    max-width: calc(50% - 16px);
   }
 }
+
+@media (max-width: 480px) {
+  .medicine-card {
+    flex: 1 1 100%; 
+    max-width: 100%;
+  }
+}
+
 
 /*------------------------------------------- checkout page----------------------------------------------------------------------------*/
 
@@ -1122,14 +1127,14 @@ textarea {
 
 #doctors-container h1 {
   font-size: 36px;
-  color: #2c3e50;
+  color: black;
   margin-bottom: 20px;
 }
 
 #doctors-container p {
   font-size: 18px;
   margin-bottom: 40px;
-  color: #34495e;
+  color: black;
 }
 
 /* Doctors Grid */
