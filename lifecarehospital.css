@@ -1544,22 +1544,14 @@ textarea {
   padding: 20px 0;
   border-top: 1px ;
   margin-top: 20px;
-}
-
-#footer-bottom h3 {
-  margin: 0;
-  color:black;
-
-}
-
-#footer-bottom h3 {
   margin: 0;
   color: white;
-
 }
 
-
-
+#copyright{
+  color: white;
+  text-align: center;
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
@@ -1575,6 +1567,3 @@ textarea {
       text-align: center;
   }
 }
-
-
-
