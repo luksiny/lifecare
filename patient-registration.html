@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration Form - Life Care Hospital</title>
+    <link rel="stylesheet" href="lifecarehospital.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+
+    <section id="patient-registration-section">
+        <div id="form-container">
+            <h1>Patient Registration Form</h1>
+
+            <form id="registration-form">
+                <!-- Personal Information -->
+                <div class="form-row">
+                    <label for="title">Title:</label>
+                    <select id="title" name="title">
+                        <option value="Dr.">Dr.</option>
+                        <option value="Mr.">Mr.</option>
+                        <option value="Mrs.">Mrs.</option>
+                        <option value="Ms.">Ms.</option>
+                        <option value="Miss">Miss</option>
+                    </select>
+
+                    <label for="marital-status">Marital Status:</label>
+                    <select id="marital-status" name="marital_status">
+                        <option value="single">Single</option>
+                        <option value="married">Married</option>
+                        <option value="widowed">Widowed</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="social-security">Social Security #:</label>
+                    <input type="text" id="social-security" name="social_security" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+
+                    <label for="birth-date">Birth Date:</label>
+                    <input type="date" id="birth-date" name="birth_date" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+
+                    <label for="parent-guardian">Parent/Guardian:</label>
+                    <input type="text" id="parent-guardian" name="parent_guardian">
+                </div>
+
+                <div class="form-row">
+                    <label for="zip">Zip:</label>
+                    <input type="text" id="zip" name="zip" required>
+
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation">
+                </div>
+
+                <div class="form-row">
+                    <label for="cell-phone">Cell Phone:</label>
+                    <input type="tel" id="cell-phone" name="cell_phone" required>
+
+                    <label for="home-phone">Home Phone:</label>
+                    <input type="tel" id="home-phone" name="home_phone">
+                </div>
+
+                <div class="form-row">
+                    <label for="employer">Employer's Name:</label>
+                    <input type="text" id="employer" name="employer">
+
+                    <label for="employer-address">Employer's Address:</label>
+                    <input type="text" id="employer-address" name="employer_address">
+                </div>
+
+                <!-- Medical Information -->
+                <div class="form-row">
+                    <label>Have you been in an accident?</label>
+                    <input type="radio" id="accident-yes" name="accident" value="yes">
+                    <label for="accident-yes">Yes</label>
+                    <input type="radio" id="accident-no" name="accident" value="no">
+                    <label for="accident-no">No</label>
+                </div>
+
+                <div class="form-row">
+                    <label>General Health:</label>
+                    <input type="checkbox" name="health_condition" value="Cataracts">Cataracts
+                    <input type="checkbox" name="health_condition" value="Diabetes">Diabetes
+                    <input type="checkbox" name="health_condition" value="Glaucoma">Glaucoma
+                    <input type="checkbox" name="health_condition" value="High Blood Pressure">High Blood Pressure
+                </div>
+
+                <!-- Insurance Information -->
+                <div class="form-row">
+                    <h3>Primary Insurance</h3>
+                    <label for="insurance-name">Insurance Name:</label>
+                    <input type="text" id="insurance-name" name="insurance_name" required>
+
+                    <label for="insurance-employer">Employer:</label>
+                    <input type="text" id="insurance-employer" name="insurance_employer" required>
+
+                    <label for="insurance-id">Insured's Name:</label>
+                    <input type="text" id="insurance-id" name="insured_name" required>
+                </div>
+
+                <div class="form-row">
+                    <h3>Secondary Insurance</h3>
+                    <label for="secondary-insurance-name">Insurance Name:</label>
+                    <input type="text" id="secondary-insurance-name" name="secondary_insurance_name">
+
+                    <label for="secondary-insurance-employer">Employer:</label>
+                    <input type="text" id="secondary-insurance-employer" name="secondary_insurance_employer">
+
+                    <label for="secondary-insured-id">Insured's Name:</label>
+                    <input type="text" id="secondary-insured-id" name="secondary_insured_name">
+                </div>
+
+                <!-- Authorization -->
+                <div class="form-row">
+                    <p>I authorize the release of this medical information or other information necessary to process this claim.</p>
+                    <label for="signature">Signature:</label>
+                    <input type="text" id="signature" name="signature" required>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+
+                <div class="form-row">
+                    <button type="submit">Submit Registration</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

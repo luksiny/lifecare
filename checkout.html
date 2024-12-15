@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./lifecarehospital.css">
+
+
+</head>
+<body>
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <div id="contact-info">
+            <i id="email-icon" class="fas fa-envelope"></i> inquiries@lifecarehospital.com
+        </div>
+        <div id="emergency-info">
+            <i id="ambulance-icon"><img src="./pics/ambulance icon.png" width="50" height="50" alt=""></i> Emergency: 11 204 9988 |
+            <i id="search-icon" class="fas fa-search"></i> Search
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div id="main-header">
+        <div id="logo">
+            <img src="./pics/logo.png" alt="Life Care Hospital Logo" width="70" height="70">
+        </div>
+        <ul id="nav-links">
+            <li id="link-careers"><a href="index.html">Home</a></li>
+            <li id="link-why-us"><a href="aboutus.html">About Us</a></li>
+            <li id="link-specialities"><a href="doctor'spage.html">Physicians</a></li>
+            <li id="link-services"><a href="services.html">Our Services</a></li>
+            <li id="link-accommodation"><a href="pharmacypage.html">Pharmacy</a></li>
+            <li id="link-corporate"><a href="consulting reservationpage.html">Consulting Reservation</a></li>
+            <li id="link-contact"><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <header>
+        <h1>Checkout</h1>
+    </header>
+    <div id="checkout-container" class="container">
+        <form id="checkout-form">
+            <div id="order-summary" class="section">
+                <h2>Order Summary</h2>
+                <p>Fill in your details below to complete the purchase:</p>
+            </div>
+
+ <!-- Personal Details Section -->
+ <div id="personal-details" class="section">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email address" required><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter your shipping address" required></textarea><br>
+
+    <label for="zipcode">Zip Code:</label>
+    <input type="text" id="zipcode" name="zipcode" placeholder="Enter your zip code" required><br>
+</div>
+
+<!-- Payment Details Section -->
+<div id="payment-details" class="section">
+    <label for="payment">Payment Method:</label>
+    <select id="payment" name="payment" required>
+        <option value="credit-card">Credit Card</option>
+        <option value="paypal">PayPal</option>
+        <option value="bank-transfer">Bank Transfer</option>
+        <option value="cash-on-delivery">Cash on Delivery</option>
+    </select><br>
+
+    <label for="card-number">Card Number:</label>
+    <input type="text" id="card-number" name="card-number" placeholder="Enter your card number"><br>
+
+    <label for="expiry">Expiry Date:</label>
+    <input type="month" id="expiry" name="expiry"><br>
+
+    <label for="cvv">CVV:</label>
+    <input type="password" id="cvv" name="cvv" placeholder="Enter CVV"><br>
+</div>
+
+<!-- Buttons Section -->
+<div id="checkout-buttons" class="section buttons">
+    <button type="submit">Pay</button>
+    <button type="reset">Clear Form</button>
+</div>
+</form>
+</div>
+
+
+<script>
+    document.getElementById('checkout-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    alert("Thank you for your purchase! Your delivery is scheduled.");
+    });
+    </script>
+<script src="./scripts/script.js"></script>
+
+
+
+<footer id="footer">
+    <div id="footer-content">
+        <!-- About Us Section -->
+        <div id="footer-section-about">
+            <h3>About Life Care Hospital</h3>
+           <p>We provide top-tier healthcare services, 24/7 emergency care, and specialized treatments. Your health is our priority.</p>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div id="footer-section-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./doctor'spage.html">Physicians</a></li>
+                <li><a href="./consulting reservationpage.html">Consultation</a></li>
+                <li><a href="./pharmacypage.html">Pharmacy</a></li>
+            </ul>
+        </div>
+
+        <!-- Contact Information Section -->
+        <div id="footer-section-contact">
+
+            <h3>Contact Us</h3>
+            <p>Email: info@lifecarehospital.com</p>
+            <p>Phone: 00 9433 7831</p>
+            <p>Address: 123 Carnival Avenue,Jaffna.</p>
+        </div>
+
+        <!-- Social Media Section -->
+        <div id="footer-section-social">
+            <h3>Follow Us</h3>
+            <p><img src="./pics/001.facebook.png" alt="f im" width="30" height="30"></p>
+            <p><img src="./pics/002 insta.png" alt="insta im" width="30" height="30"></p>
+            <p><img src="./pics/003 whats.png" alt="whats im" width="30" height="30"></p>
+            <p><img src="./pics/004 linkedin.png" alt="link im" width="30" height="30"></p>
+        </div>
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div id="footer-bottom">
+        <h3>&copy; 2024 Life Care Hospital. All Rights Reserved.</h3>
+    </div>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+      

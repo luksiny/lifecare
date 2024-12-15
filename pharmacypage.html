@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon_package_v0.16/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_package_v0.16/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon_package_v0.16/favicon-16x16.png">
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest">
+    <link rel="mask-icon" href="./favicon_package_v0.16/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy - Life Care Hospital</title>
+    <link rel="stylesheet" href="lifecarehospital.css">
+    
+
+</head>
+<body>
+    
+    <!-- Top Bar -->
+    <div id="top-bar">
+        <div id="contact-info">
+            <i id="email-icon" class="fas fa-envelope"></i> inquiries@lifecarehospital.com
+        </div>
+        <div id="emergency-info">
+            <i id="ambulance-icon"><img src="./pics/ambulance icon.png" width="50" height="50" alt=""></i> Emergency: 11 204 9988 |
+            <i id="search-icon" class="fas fa-search"></i> Search
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <div id="main-header">
+        <div id="logo">
+            <img src="./pics/logo.png" alt="Life Care Hospital Logo" width="70" height="70">
+        </div>
+
+
+        <ul id="nav-links">
+            <li id="link-careers"><a href="index.html">Home</a></li>
+            <li id="link-why-us"><a href="aboutus.html">About Us</a></li>
+            <li id="link-specialities"><a href="doctor'spage.html">Physicians</a></li>
+            <li id="link-services"><a href="services.html">Our Services</a></li>
+            <li id="link-accommodation"><a href="pharmacypage.html">Pharmacy</a></li>
+            <li id="link-corporate"><a href="consulting reservationpage.html">Consulting Reservation</a></li>
+            <li id="link-contact"><a href="contactus.html">Contact</a></li>
+        
+        </ul>
+        </div>
+
+      
+    <div id="pharmacy-header">
+    <h1>Pharmacy Order Page</h1>
+    </div>
+        
+
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Welcome to Life Care Pharmacy</h1>
+                <p>Your trusted source for quality medicines and health care.</p>
+                <a href="#medicines" class="hero-button">Explore Medicines</a>
+            </div>
+        </div>
+        
+        <!-- Analgesics Section -->
+<div id="section-analgesics">
+    <h2 id="analgesics-title">Analgesics</h2>
+    <div id="analgesics-cards">
+        <div id="card-paracetamol" >
+            <img src="./pics/paracetamol.jpeg" alt="">
+            <p>Paracetamol</p>
+            <span>$10</span>
+            <div class="card-buttons">  
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Paracetamol', 10, document.getElementById('card-paracetamol').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+        
+
+
+
+        <div id="card-ibuprofen">
+            <img src="./pics/ibuprofen.jpeg" alt="">
+            <p>Ibuprofen</p>
+            <span>$12</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+             <button class="add-to-cart-button" onclick="addToCart('Ibuprofen', 12,document.getElementById('card-ibuprofen').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        
+        <div id="card-aspirin" onclick="addToCart('Aspirin', 8)">
+            <img src="./pics/aspirin.jpeg" alt="">
+            <p>Aspirin</p>
+            <span>$8</span>
+            <div class="card-buttons">
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Aspirin', 8,document.getElementById('card-aspirin').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-codeine" onclick="addToCart('Codeine', 15)">
+            <img src="./pics/codeine.jpeg" alt="">
+            <p>Codeine</p>
+            <span>$15</span>
+            <div class="card-buttons">
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Codeine', 15,document.getElementById('card-codeine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-diclofenac">
+            <img src="./pics/diclofenac.jpeg" alt="">
+            <p>Diclofenac</p>
+            <span>$18</span>
+            <div class="card-buttons">
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('diclofenac', 18,document.getElementById('card-diclofenac').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-naproxen">
+            <img src="./pics/naproxen.jpeg" alt="">
+            <p>Naproxen</p>
+            <span>$20</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Naproxen', 20,document.getElementById('card-naproxen').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+    
+
+
+
+<!-- Antibiotics Section -->
+<div id="section-Antibiotics">
+    <h2 id="Antibiotics-title">Antibiotics</h2>
+    <div id="Antibiotics-cards">
+        <div id="card-Amoxicillin" >
+            <img src="./pics/Amoxicillin.jpeg" alt="">
+            <p>Amoxicillin</p>
+            <span>$20</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Amoxicillin', 20,document.getElementById('card-Amoxicillin').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Ciprofloxacin" >
+            <img src="./pics/Ciprofloxacin.jpeg" alt="">
+            <p>Ciprofloxacin</p>
+            <span>$32</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Ciprofloxacin', 32,document.getElementById('card-Ciprofloxacin').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-Azithromycin" >
+            <img src="./pics/Azithromycin.jpeg" alt="">
+            <p>Azithromycin</p>
+            <span>$40</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Azithromycin', 40,document.getElementById('card-Azithromycin').querySelector('.quantity-input'))">Add to Cart</button>
+
+        </div>
+
+
+        <div id="card-Doxycycline" >
+            <img src="./pics/Doxycycline.jpeg" alt="">
+            <p>Doxycycline</p>
+            <span>$22</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Doxycycline', 22,document.getElementById('card-Doxycycline').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="Metronidazole" >
+            <img src="./pics/Metronidazole.jpeg" alt="">
+            <p>Metronidazole</p>
+            <span>$70</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Metronidazole', 70,document.getElementById('Metronidazole').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Clindamycin">
+            <img src="./pics/Clindamycin.jpeg" alt="">
+            <p>Clindamycin</p>
+            <span>$55</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Clindamycin', 55,document.getElementById('card-Clindamycin').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+    
+
+
+<!-- Antidepressants Section -->
+<div id="section-Antidepressants">
+    <h2 id="Antidepressants-title">Antidepressants</h2>
+    <div id="Antidepressants-cards">
+        <div id="card-Fluoxetine" >
+            <img src="./pics/Fluoxetine.jpeg" alt="">
+            <p>Fluoxetine</p>
+            <span>$50</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Fluoxetine', 50,document.getElementById('card-Fluoxetine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-Sertraline" >
+            <img src="./pics/Sertraline.jpeg" alt="">
+            <p>Sertraline</p>
+            <span>$78</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Sertraline', 78,document.getElementById('card-Sertraline').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Citalopram" >
+            <img src="./pics/Citalopram.jpeg" alt="">
+            <p>Citalopram</p>
+            <span>$88</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Citalopram', 88,document.getElementById('card-Citalopram').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-Venlafaxine" >
+            <img src="./pics/Venlafaxine.jpeg" alt="">
+            <p>Venlafaxine</p>
+            <span>$95</span>
+            <div class="card-buttons">
+              </div>
+              
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Venlafaxine', 95,document.getElementById('card-Venlafaxine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-Amitriptyline">
+            <img src="./pics/Amitriptyline.jpeg" alt="">
+            <p>Amitriptyline</p>
+            <span>$76</span><div class="card-buttons">
+        </div>
+  
+        <input type="number" min="0" max="99" value="0" class="quantity-input" />
+            <button class="add-to-cart-button" onclick="addToCart('Amitriptyline', 76,document.getElementById('card-Amitriptyline').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Mirtazapine" >
+            <img src="./pics/Mirtazapine.jpeg" alt="">
+            <p>Mirtazapine</p>
+            <span>$20</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+            <button class="add-to-cart-button" onclick="addToCart('Mirtazapine', 20,document.getElementById('card-Mirtazapine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+    
+
+
+
+<!-- Antihistamines Section -->
+<div id="section-Antihistamines">
+    <h2 id="Antihistamines-title">Antihistamines</h2>
+    <div id="Antihistamines-cards">
+        <div id="card-Loratadine">
+            <img src="./pics/Loratadine.jpeg" alt="">
+            <p>Loratadine</p>
+            <span>$100</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+            <button class="add-to-cart-button" onclick="addToCart('Loratadine', 100,document.getElementById('card-Loratadine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Cetirizine">
+            <img src="./pics/Cetirizine.jpeg" alt="">
+            <p>Cetirizine</p>
+            <span>$52</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+            <button class="add-to-cart-button" onclick="addToCart('Cetirizine', 52,document.getElementById('card-Cetirizine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Cetirizine">
+            <img src="./pics/Cetirizine.jpeg" alt="">
+            <p>Cetirizine</p>
+            <span>$45</span>
+            <div class="card-buttons">
+                
+              </div>
+
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Cetirizine', 45,document.getElementById('card-Cetirizine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <div id="card-Fexofenadine">
+            <img src="./pics/Fexofenadine.jpeg" alt="">
+            <p>Fexofenadine</p>
+            <span>$65</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Fexofenadine', 65,document.getElementById('card-Fexofenadine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Diphenhydramine">
+            <img src="./pics/Diphenhydramine.jpeg" alt="">
+            <p>Diphenhydramine</p>
+            <span>$68</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Diphenhydramine', 68,document.getElementById('card-Diphenhydramine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Chlorpheniramine">
+            <img src="./pics/Chlorpheniramine.jpeg" alt="">
+            <p>Chlorpheniramine</p>
+            <span>$200</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Chlorpheniramine', 200,document.getElementById('card-Chlorpheniramine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+    
+
+
+
+<!-- Antihypertensives Section -->
+<div id="section-Antihypertensives">
+    <h2 id="Antihypertensives-title">Analgesics</h2>
+    <div id="Antihypertensives-cards">
+        <div id="card-Amlodipine">
+            <img src="./pics/Amlodipine.jpeg" alt="">
+            <p>Amlodipine</p>
+            <span>$150</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Amlodipine', 150,document.getElementById('card-Amlodipine').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Ibuprofen">
+            <img src="./pics/ibuprofen.jpeg" alt="">
+            <p>Ibuprofen</p>
+            <span>$12</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Ibuprofen', 12,document.getElementById('card-Ibuprofen').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Enalapril">
+            <img src="./pics/Enalapril.jpeg" alt="">
+            <p>Enalapril</p>
+            <span>$88</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Enalapril', 88,document.getElementById('card-Enalapril').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Hydrochlorothiazide">
+            <img src="./pics/Hydrochlorothiazide.jpeg" alt="">
+            <p>Hydrochlorothiazide</p>
+            <span>$55</span>
+            <div class="card-buttons">
+               
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+              <button class="add-to-cart-button" onclick="addToCart('Hydrochlorothiazide', 55,document.getElementById('card-Hydrochlorothiazide').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Metoprolol" >
+            <img src="./pics/Metoprolol.jpeg" alt="">
+            <p>Metoprolol</p>
+            <span>$68</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Metoprolol', 68,document.getElementById('card-Metoprolol').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+
+        <div id="card-Naproxen">
+            <img src="./pics/naproxen.jpeg" alt="">
+            <p>Naproxen</p>
+            <span>$90</span>
+            <div class="card-buttons">
+                
+              </div>
+              <input type="number" min="0" max="99" value="0" class="quantity-input" />
+                <button class="add-to-cart-button" onclick="addToCart('Naproxen', 90,document.getElementById('card-Naproxen').querySelector('.quantity-input'))">Add to Cart</button>
+        </div>
+
+        <!-- Order Summary Section -->
+    <div class="order-summary">
+        <h2>Order Summary</h2>
+        <table id="orderTable">
+            <tr>
+                <th>Medicine Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total</th>
+                
+               
+            </tr>
+            <tbody id="orderItems">
+
+            </tbody>
+        </table>
+
+        <br>
+        <h2 id="totalPrice"></h2>
+    
+        
+        <div id="buttons-container" class="buttons">
+            <button onclick="saveToFavourites();">Add to Favourites</button>
+            <button id="applyFavorite" >Apply Favourites</button>
+            <button id="buyNow">Buy Now</button>
+            <a href="./checkout.html" class="checkout-link"></a>
+        </div>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>
+
+        
+
+
+
+           
+        
+
+        
+
+            
+    
+
+
+
+
+
+
+  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div id="footer-content">
+            <!-- About Us Section -->
+            <div id="footer-section-about">
+                <h3>About Life Care Hospital</h3>
+                <p>We provide top-tier healthcare services, 24/7 emergency care, and specialized treatments. Your health is our priority.</p>
+            </div>
+    
+            <!-- Quick Links Section -->
+            <div id="footer-section-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./aboutus.html">About Us</a></li>
+                    <li><a href="./services.html">Services</a></li>
+                    <li><a href="./doctor'spage.html">Physicians</a></li>
+                    <li><a href="./consulting reservationpage.html">Consultation</a></li>
+                    <li><a href="./pharmacypage.html">Pharmacy</a></li>
+                </ul>
+            </div>
+    
+            <!-- Contact Information Section -->
+            <div id="footer-section-contact">
+                <h3>Contact Us</h3>
+                <p>Email: info@lifecarehospital.com</p>
+                <p>Phone: +1 123 456 7890</p>
+                <p>Address: 123 Health St, Wellness City, USA</p>
+            </div>
+    
+            <!-- Social Media Section -->
+        <div id="footer-section-social">
+            <h3>Follow Us</h3>
+            <p><img src="./pics/001.facebook.png" alt="f im" width="30" height="30"></p>
+            <p><img src="./pics/002 insta.png" alt="insta im" width="30" height="30"></p>
+            <p><img src="./pics/003 whats.png" alt="whats im" width="30" height="30"></p>
+            <p><img src="./pics/004 linkedin.png" alt="link im" width="30" height="30"></p>
+        </div>
+    </div>
+
+        <!-- Footer Bottom Section -->
+        <div id="footer-bottom">
+            <p>&copy; 2024 Life Care Hospital. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
