@@ -58,80 +58,11 @@
             <div class="hero-content">
                 <h1>Welcome to Life Care Pharmacy</h1>
                 <p>Your trusted source for quality medicines and health care.</p>
-                <a href="#medicines" class="hero-button">Explore Medicines</a>
+                <a href="./pharmacypage.html" class="hero-button">Explore Medicines</a>
             </div>
         </div>
         
-        <!-- Analgesics Section -->
-<div id="section-analgesics">
-    <h2 id="analgesics-title">Analgesics</h2>
-    <div id="analgesics-cards">
-        <div id="card-paracetamol" >
-            <img src="./pics/paracetamol.jpeg" alt="">
-            <p>Paracetamol</p>
-            <span>$10</span>
-            <div class="card-buttons">  
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-              <button class="add-to-cart-button" onclick="addToCart('Paracetamol', 10, document.getElementById('card-paracetamol').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-        
 
-
-
-        <div id="card-ibuprofen">
-            <img src="./pics/ibuprofen.jpeg" alt="">
-            <p>Ibuprofen</p>
-            <span>$12</span>
-            <div class="card-buttons">
-                
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-             <button class="add-to-cart-button" onclick="addToCart('Ibuprofen', 12,document.getElementById('card-ibuprofen').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-
-        
-        <div id="card-aspirin" onclick="addToCart('Aspirin', 8)">
-            <img src="./pics/aspirin.jpeg" alt="">
-            <p>Aspirin</p>
-            <span>$8</span>
-            <div class="card-buttons">
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-                <button class="add-to-cart-button" onclick="addToCart('Aspirin', 8,document.getElementById('card-aspirin').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-
-        <div id="card-codeine" onclick="addToCart('Codeine', 15)">
-            <img src="./pics/codeine.jpeg" alt="">
-            <p>Codeine</p>
-            <span>$15</span>
-            <div class="card-buttons">
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-              <button class="add-to-cart-button" onclick="addToCart('Codeine', 15,document.getElementById('card-codeine').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-
-        <div id="card-diclofenac">
-            <img src="./pics/diclofenac.jpeg" alt="">
-            <p>Diclofenac</p>
-            <span>$18</span>
-            <div class="card-buttons">
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-                <button class="add-to-cart-button" onclick="addToCart('diclofenac', 18,document.getElementById('card-diclofenac').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-
-        <div id="card-naproxen">
-            <img src="./pics/naproxen.jpeg" alt="">
-            <p>Naproxen</p>
-            <span>$20</span>
-            <div class="card-buttons">
-                
-              </div>
-              <input type="number" min="0" max="99" value="0" class="quantity-input" />
-                <button class="add-to-cart-button" onclick="addToCart('Naproxen', 20,document.getElementById('card-naproxen').querySelector('.quantity-input'))">Add to Cart</button>
-        </div>
-    
 
 
 
@@ -210,7 +141,7 @@
               <button class="add-to-cart-button" onclick="addToCart('Clindamycin', 55,document.getElementById('card-Clindamycin').querySelector('.quantity-input'))">Add to Cart</button>
         </div>
     
-
+       
 
 <!-- Antidepressants Section -->
 <div id="section-Antidepressants">
@@ -226,6 +157,8 @@
               <input type="number" min="0" max="99" value="0" class="quantity-input" />
               <button class="add-to-cart-button" onclick="addToCart('Fluoxetine', 50,document.getElementById('card-Fluoxetine').querySelector('.quantity-input'))">Add to Cart</button>
         </div>
+    </div>
+
 
         <div id="card-Sertraline" >
             <img src="./pics/Sertraline.jpeg" alt="">
@@ -300,6 +233,8 @@
               <input type="number" min="0" max="99" value="0" class="quantity-input" />
             <button class="add-to-cart-button" onclick="addToCart('Loratadine', 100,document.getElementById('card-Loratadine').querySelector('.quantity-input'))">Add to Cart</button>
         </div>
+    </div>
+
 
 
         <div id="card-Cetirizine">
@@ -438,6 +373,12 @@
               <input type="number" min="0" max="99" value="0" class="quantity-input" />
                 <button class="add-to-cart-button" onclick="addToCart('Naproxen', 90,document.getElementById('card-Naproxen').querySelector('.quantity-input'))">Add to Cart</button>
         </div>
+    </div>
+</div>
+
+
+
+
 
         <!-- Order Summary Section -->
     <div class="order-summary">
@@ -466,98 +407,37 @@
             <button id="buyNow">Buy Now</button>
             <a href="./checkout.html" class="checkout-link"></a>
         </div>
+
+
+        
+
+        <form id="orderForm">
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <table id="orderTable">
+                    <tr>
+                        <th>Medicine Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                    <tbody id="orderItems"></tbody>
+                </table>
+                <br>
+                <h2 id="totalPrice"></h2>
+        
+                <div id="buttons-container" class="buttons">
+                    <button type="submit">Submit Order</button>
+                    <button onclick="saveToFavourites();">Add to Favourites</button>
+                </div>
+            </div>
+        </form>
     
     <script src="./scripts/script.js"></script>
 </body>
 </html>
 
         
-
-
-
-           
-        
-
-        
-
-            
-    
-
-
-
-
-
-
-  
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -602,10 +482,7 @@
         </div>
     </div>
 
-    <!-- Footer Bottom Section -->
-    <div id="footer-bottom">
-        <p div="copyright"> &copy; 2024 Life Care Hospital. All Rights Reserved.</p>
-    </div>
+    
 </footer>
     
 </body>

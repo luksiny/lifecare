@@ -30,6 +30,16 @@ body {
   align-items: center;
 }
 
+@media (max-width: 768px){ 
+  #top-bar, #nav-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+}
+
+
 /* Main Header */
 #main-header {
   display: flex;
@@ -57,7 +67,7 @@ body {
   gap: 20px;
   margin: 0;
   padding: 0;
-  background-color: #00274D; /* Dark Blue Background for high contrast */
+  background-color: #00274D; 
   padding: 10px 15px;
 }
 
@@ -77,16 +87,16 @@ body {
 }
 
 #nav-links li a:hover {
-  background-color:  #004080; /* Slightly lighter dark blue */;
-  color: #FFD700; /* Bright Yellow for strong visual contrast */
-  border-radius: 4px; /* Smooth rounded corners for better UI */
+  background-color:  #004080; 
+  color: #FFD700; 
+  border-radius: 4px; 
   
 }
 
 #nav-links li a:focus {
-  outline: 3px solid #FFD700; /* Yellow outline for clear focus */
+  outline: 3px solid #FFD700; 
   background-color: #004080;
-  color: #FFFFFF; /* Maintains text visibility */
+  color: #FFFFFF; 
 }
 
 
@@ -95,9 +105,49 @@ body {
 
 /*-------------------------------------------home page----------------------------------------------------------------------------*/
 
+/* Welcome Section */
+#welcome-section {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #eaf2f8;
+}
+
+#welcome-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+#welcome-section p {
+  font-size: 18px;
+  color: #555;
+}
+
+
+/* Our Hospital Section */
+#our-hospital {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#our-hospital img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Services Section */
+
 #service-h2{
   color: #2c3e50;
 }
+
+
+
+
+
 
 h1, h2 {
   color: #2c3e50;
@@ -159,41 +209,6 @@ li {
       font-size: 1.5em;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -320,65 +335,6 @@ li {
       height: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -589,7 +545,10 @@ form {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
+  color: black;
 }
+
+
 
 label {
   display: block;
@@ -651,14 +610,14 @@ button:hover {
 
 .hero {
   position: relative;
-  background-image: url('./pics/heroimage.png'); /* Replace with your image path */
+  background-image: url('./pics/heroimage.png'); 
   background-size: cover;
   background-position: center;
-  height: 600px; /* Adjust height as needed */
+  height: 600px; 
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color:black;
   text-align: center;
 }
 
@@ -669,37 +628,33 @@ button:hover {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0, 0, 0, 0.5); /* Add overlay for better text visibility */
+  background: rgba(0, 0, 0, 0.5); 
 }
 
 .hero-content {
   position: relative;
-  z-index: 1; /* Ensure content appears above the overlay */
-  color: white; /* Change this to your desired text color */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Optional: Add shadow for better readability */
+  z-index: 1; 
+  color: black; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
-
-
-
-
 
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
-  color: white;
+  color: black;
 }
 
 .hero-content p {
   font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: white;
+  color:black;
 }
 
 .hero-button {
   display: inline-block;
   padding: 0.75rem 1.5rem;
-  background-color: #007bff; /* Button color */
-  color: white;
+  background-color: #007bff; 
+  color: black;
   text-decoration: none;
   border-radius: 5px;
   font-size: 1rem;
@@ -707,20 +662,20 @@ button:hover {
 }
 
 .hero-button:hover {
-  background-color: #0056b3; /* Darker button color on hover */
+  background-color: #0056b3; 
 }
 
 .hero-text {
   position: relative;
-  color: white;
+  color: black;
   z-index: 1;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .hero-text h1 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: white;
+  color: black;
 }
 
 .hero-text p {
@@ -731,16 +686,12 @@ button:hover {
 /* Header Styling */
 #pharmacy-header {
   
-  color: #FFFFFF; /* White text */
+  color: #FFFFFF;
   padding: 20px;
-  text-align: center; /* Center the text */
+  text-align: center; 
   font-size: 24px;
   font-weight: bold;
 }
-
-
-
-
 
 
 /* General Section Styles */
@@ -750,7 +701,16 @@ button:hover {
   border-radius: 12px;
   background-color: #f8f9fa;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width:auto;
 }
+
+@media (max-width: 480px) {
+  #section-analgesics, #section-antibiotics, #section-antidepressants, #section-Antihistamines, #section-Antihypertensives{
+    width:auto;
+    padding: 10px;
+  }
+}
+
 
 /* Section Title Styles */
 #analgesics-title, #Antibiotics-title, #Antidepressants-title, #Antihistamines-title, #Antihypertensives-title {
@@ -769,6 +729,9 @@ button:hover {
   justify-content: center;
 }
 
+
+
+
 /* Individual Medicine Cards */
 #card-paracetamol, #card-ibuprofen, #card-aspirin, #card-codeine, #card-diclofenac, #card-naproxen,
 #card-Amoxicillin, #card-Ciprofloxacin, #card-Azithromycin, #card-Doxycycline, #card-Clindamycin, #Metronidazole,
@@ -776,7 +739,7 @@ button:hover {
 #card-Loratadine, #card-Cetirizine, #card-Fexofenadine, #card-Diphenhydramine, #card-Chlorpheniramine,
 #card-Amlodipine, #card-Losartan, #card-Enalapril, #card-Hydrochlorothiazide, #card-Metoprolol, #card-Valsartan,#card-Ibuprofen,#card-Naproxen {
   background-color: #007BFF;
-  color: #fff;
+  color: black;
   width: 180px;
   padding: 20px;
   border-radius: 10px;
@@ -862,23 +825,30 @@ button:hover {
 #card-Fluoxetine img, #card-Sertraline img, #card-Citalopram img, #card-Venlafaxine img, #card-Amitriptyline img, #card-Mirtazapine img,
 #card-Loratadine img, #card-Cetirizine img, #card-Fexofenadine img, #card-Diphenhydramine img, #card-Chlorpheniramine img,
 #card-Amlodipine img, #card-Losartan img, #card-Enalapril img, #card-Hydrochlorothiazide img, #card-Metoprolol img, #card-Valsartan img {
-  width: 100%; /* Adjust the width to fit the card */
-  height: auto; /* Maintain the aspect ratio */
-  border-radius: 8px; /* Optional: Rounded corners for the image */
-  margin-bottom: 10px; /* Add space below the image */
+  width: 100%;
+  height: auto; 
+  border-radius: 8%;
+  margin-bottom: 20px; 
+  color: black;
 }
 
+
+
+
+
 /* Card Text and Price Alignment */
-#card-paracetamol p, #card-ibuprofen p, #card-aspirin p, #card-codeine p, #card-diclofenac p, #card-naproxen p,
+#card-paracetamol p,#card-Ibuprofen p , #card-aspirin p, #card-codeine p, #card-diclofenac p, #card-Naproxen p,
 #card-Amoxicillin p, #card-Ciprofloxacin p, #card-Azithromycin p, #card-Doxycycline p, #card-Clindamycin p, #Metronidazole p,
 #card-Fluoxetine p, #card-Sertraline p, #card-Citalopram p, #card-Venlafaxine p, #card-Amitriptyline p, #card-Mirtazapine p,
 #card-Loratadine p, #card-Cetirizine p, #card-Fexofenadine p, #card-Diphenhydramine p, #card-Chlorpheniramine p,
-#card-Amlodipine p, #card-Losartan p, #card-Enalapril p, #card-Hydrochlorothiazide p, #card-Metoprolol p, #card-Valsartan p {
+#card-Amlodipine p, #card-Losartan p, #card-Enalapril p, #card-Hydrochlorothiazide p, #card-Metoprolol p, #card-Valsartan p ,#card-ibuprofen p{
   font-size: 16px;
   margin: 8px 0;
   font-weight: bold;
-  text-align: center; /* Center-align the text */
+  text-align: center; 
+  color:black;
 }
+
 
 #card-paracetamol span, #card-ibuprofen span, #card-aspirin span, #card-codeine span, #card-diclofenac span, #card-naproxen span,
 #card-Amoxicillin span, #card-Ciprofloxacin span, #card-Azithromycin span, #card-Doxycycline span, #card-Clindamycin span, #Metronidazole span,
@@ -888,60 +858,70 @@ button:hover {
   font-size: 14px;
   font-weight: bold;
   margin-top: 5px;
-  color: #f1f1f1; /* Optional: Make price visually distinct */
+  color: black; 
+}
+
+
+
+
+.add-to-cart-button
+{
+    color: black;
 }
 
 
 /* Buttons Container */
 #buttons-container {
-  text-align: center; /* Center the buttons */
+  text-align: center; 
   margin-top: 20px;
 }
 
 /* Button Styling */
 #buttons-container button {
-  background-color: #007bff; /* Primary blue color */
-  color: #ffffff; /* White text */
+  background-color: #007bff;
+  color: black;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px; /* Spacing inside buttons */
+  padding: 10px 20px; 
   font-size: 16px;
   font-weight: bold;
-  cursor: pointer; /* Pointer on hover */
-  margin: 5px; /* Space between buttons */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  transition: all 0.3s ease; /* Smooth transition */
+  cursor: pointer; 
+  margin: 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: all 0.3s ease; 
 }
 
 /* Hover Effect */
 #buttons-container button:hover {
-  background-color: #0056b3; /* Darker blue on hover */
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
-  transform: translateY(-2px); /* Slight lift on hover */
+  background-color: #0056b3; 
+  color:white;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+  transform: translateY(-2px);
 }
 
 /* Active Button Effect */
 #buttons-container button:active {
-  background-color: #003f7f; /* Even darker blue */
-  transform: translateY(0px); /* Press down effect */
+  background-color: #003f7f;
+  color: black;
+  transform: translateY(0px); 
 }
 
 /* Apply to Specific Buttons */
 #applyFavorite {
-  background-color: #28a745; /* Green color */
+  background-color: #28a745; 
 }
 
 #applyFavorite:hover {
-  background-color: #218838; /* Darker green */
+  background-color: #218838; 
 }
 
 #buyNow {
-  background-color: #ffc107; /* Yellow color */
-  color: #212529; /* Dark text for contrast */
+  background-color: #ffc107; 
+  color: #212529; 
 }
 
 #buyNow:hover {
-  background-color: #e0a800; /* Darker yellow */
+  background-color: #e0a800; 
 }
 
 
@@ -953,7 +933,7 @@ button:hover {
 .order-summary {
   width: 80%;
   margin: 20px auto;
-  background-color: #f9f9f9; /* Light gray background */
+  background-color: white; 
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -962,18 +942,18 @@ button:hover {
 
 /* Table Styling */
 .order-summary table {
+  color: black;
   width: 100%;
   border-collapse: collapse;
   margin-top: 10px;
-  background-color: #ffffff; /* White background for table */
   border-radius: 8px;
-  overflow: hidden; /* Ensures corners are rounded */
+  overflow: hidden; 
 }
 
 /* Table Header Styling */
 .order-summary th {
-  background-color: #007bff; /* Blue background */
-  color: #ffffff;
+  background-color: #007bff; 
+  color: black;
   font-size: 16px;
   padding: 12px;
   text-align: center;
@@ -990,12 +970,12 @@ button:hover {
 
 /* Alternating Row Colors */
 .order-summary tbody tr:nth-child(even) {
-  background-color: #f2f2f2; /* Light gray for even rows */
+  background-color: #f2f2f2; 
 }
 
 /* Hover Effect */
 .order-summary tbody tr:hover {
-  background-color: #e9f5ff; /* Light blue hover */
+  background-color: #e9f5ff; 
   transition: background-color 0.3s ease;
 }
 
@@ -1010,6 +990,13 @@ button:hover {
 }
 
 
+
+#analgesics-cards, #antibiotics-cards,#Antidepressants-cards,#Antihistamines-cards,#Antihypertensives-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 @media (max-width: 768px) {
   .medicine-card {
     flex: 1 1 calc(50% - 16px); 
@@ -1023,6 +1010,7 @@ button:hover {
     max-width: 100%;
   }
 }
+
 
 
 /*------------------------------------------- checkout page----------------------------------------------------------------------------*/
@@ -1182,68 +1170,6 @@ textarea {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*------------------------------------------- contact us----------------------------------------------------------------------------*/
 
 
@@ -1361,76 +1287,8 @@ textarea {
   #map-section iframe {
       width: 100%;
       height: 300px;
+    }
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*------------------------------------------- footer----------------------------------------------------------------------------*/
 
@@ -1454,11 +1312,6 @@ textarea {
   margin: 0 auto;
   
 }
-
-
-
-
-
 
 /* About Section */
 #footer-section-about {

@@ -91,6 +91,8 @@ document.getElementById('buyNow').addEventListener('click', () => {
     }
 });
 
+
+
 // Handle checkout form submission
 if (document.getElementById('orderForm')) {
     document.getElementById('orderForm').addEventListener('submit', function (event) {
@@ -117,6 +119,7 @@ if (document.getElementById('orderForm')) {
     });
 }
 
+    
 // Load order summary on checkout page
 if (document.getElementById('checkoutOrderSummary')) {
     const currentOrder = localStorage.getItem('currentOrder');
