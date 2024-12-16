@@ -92,8 +92,6 @@ document.getElementById('buyNow').addEventListener('click', () => {
 });
 
 
-
-// Handle checkout form submission
 if (document.getElementById('orderForm')) {
     document.getElementById('orderForm').addEventListener('submit', function (event) {
         event.preventDefault();
@@ -103,6 +101,7 @@ if (document.getElementById('orderForm')) {
         const paymentInfo = document.getElementById('payment').value;
 
         if (name && address && paymentInfo) {
+            // Create delivery date only when inputs are valid
             const deliveryDate = new Date();
             deliveryDate.setDate(deliveryDate.getDate() + 7);
 
@@ -114,10 +113,15 @@ if (document.getElementById('orderForm')) {
             document.getElementById('thankYouMessage').style.display = 'block';
             document.getElementById('orderForm').style.display = 'none';
         } else {
-            alert('Please fill in all the required details.');
+            // Define delivery date separately for the alert
+            const today = new Date();
+            today.setDate(today.getDate() + 7);
+
+            alert(`Please fill in all the required details. The estimated delivery date is ${today.toDateString()}.`);
         }
     });
 }
+
 
     
 // Load order summary on checkout page

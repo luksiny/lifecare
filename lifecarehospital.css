@@ -1027,10 +1027,15 @@ body {
 /* Header */
 header {
   background-color: #218838;
-  color:black;
+  color:white;
   padding: 20px;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+header h1{
+  color: black;
 }
 
 /* Container */
@@ -1039,6 +1044,7 @@ header {
   margin: 30px auto;
   padding: 20px;
   background-color: #ffffff;
+  color: black;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -1073,7 +1079,7 @@ textarea {
 /* Buttons */
 .buttons button {
   background-color: #007bff;
-  color: #fff;
+  color: black;
   border: none;
   border-radius: 5px;
   padding: 10px 15px;
